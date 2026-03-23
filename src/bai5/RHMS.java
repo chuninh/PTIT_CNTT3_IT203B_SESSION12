@@ -84,7 +84,7 @@ public class RHMS {
         ps.setString(4, sc.nextLine());
 
         ps.executeUpdate();
-        System.out.println("✔ Thêm thành công");
+        System.out.println(" Thêm thành công");
     }
 
     static void updateDisease(Connection conn, Scanner sc) throws Exception {
@@ -103,8 +103,8 @@ public class RHMS {
 
         int rows = ps.executeUpdate();
 
-        if (rows > 0) System.out.println("✔ Cập nhật thành công");
-        else System.out.println("❌ Không tìm thấy bệnh nhân");
+        if (rows > 0) System.out.println("Cập nhật thành công");
+        else System.out.println(" Không tìm thấy bệnh nhân");
     }
 
     static void discharge(Connection conn, Scanner sc) throws Exception {
@@ -120,6 +120,6 @@ public class RHMS {
 
         BigDecimal fee = cs.getBigDecimal(2);
 
-        System.out.println("💰 Viện phí: " + fee);
+        System.out.println(" Viện phí: " + fee);
     }
 }
