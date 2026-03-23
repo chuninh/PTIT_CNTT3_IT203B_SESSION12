@@ -17,8 +17,8 @@ public class InsertLabResults {
             PreparedStatement ps = conn.prepareStatement(sql);
             for (int i = 1; i <= 1000; i++) {
 
-                ps.setInt(1, i);          // patient_id
-                ps.setDouble(2, 5.5 + i); // kết quả xét nghiệm
+                ps.setInt(1, i);          
+                ps.setDouble(2, 5.5 + i); 
 
                 ps.executeUpdate();
             }
